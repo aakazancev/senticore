@@ -1,0 +1,99 @@
+.how-operate{
+    padding: 40px 0 60px;
+
+    &__columns{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+        margin: 32px 0 52px;
+    }
+
+    &__quote{
+        border-radius: 26px 26px 26px 0;
+        padding: 32px;
+        border: 3px solid transparent;
+        background: 
+            linear-gradient(#F4F9FF 0 0) padding-box, 
+            linear-gradient(95.19deg, #E8F0FA 1.29%, #F4F9FF 96.68%) border-box;
+        display: grid;
+        gap: 28px;
+        margin-bottom: 32px;
+
+        h4{
+            @include promt-semibold;
+        }
+        p{
+            @include gilroy-medium;
+        }
+    }
+
+    &__list{
+        display: grid;
+        gap: 20px;
+        padding-left: 32px;
+
+        li{
+            position: relative;
+            @include gilroy-regular;
+        }
+    }
+    .ul-square{
+        li{
+            position: relative;
+            @include gilroy-regular;
+            display: grid;
+            grid-template-columns: 8px 1fr;
+            gap: 10px;
+            align-items: baseline;
+            &::before{
+                position: relative;
+                width: 8px;
+                height: 8px;
+                content: "";
+                background: #0C6DFA;
+                transform: rotate(45deg);
+                display: block;
+                border-radius: 1px;
+            }
+        }
+    }
+
+    &__item{
+        &_second{
+            padding-top: 21px;
+            padding-left: 68px;
+
+            h4{
+                margin-bottom: 48px;
+                @include promt-semibold;
+            }
+        }
+    }
+
+    &__points{
+        display: grid;
+        gap: 40px;
+
+        li{
+            display: flex;
+            align-items: center;
+            gap: 26px;
+            @include promt-medium;
+            color: $secondary;
+            position: relative;
+
+            &::after{
+                opacity: 0.2;
+                border: 1px dashed #0C6DFA;
+                height: 47px;
+                content: "";
+                position: absolute;
+                top: 96%;
+                left: 15px;
+            }
+            &:last-child::after{
+                display: none;
+            }
+        }
+    }
+}

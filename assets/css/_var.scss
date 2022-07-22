@@ -1,0 +1,75 @@
+//color
+$blue-primary: #0C6DFA;
+$white: #ffffff;
+
+$linear-oragne: linear-gradient(209.56deg, #FCC68F 3.39%, #FF9C9D 60.39%, #FC8ABC 115.67%);
+
+$linear-blue: linear-gradient(180deg, #5CB7FF -6.11%, #2194EF 105.73%);
+
+$main: #2B2934;
+$secondary: #6A7497;
+
+
+//fonts 
+@mixin promt-semibold {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+}
+
+@mixin promt-medium {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.015em;
+}
+
+@mixin gilroy-regular {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180.5%;
+    letter-spacing: 0.015em;
+}
+
+@mixin gilroy-medium{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.015em;
+}
+
+@mixin gilroy-lines {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+@mixin headers {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 60px;
+    color: #000000;
+}
+
+@mixin message {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;
+}
+

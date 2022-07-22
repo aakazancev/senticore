@@ -1,0 +1,20 @@
+.partners{
+    margin: 60px 0;
+    position: relative;
+
+    .container{
+        padding-top: 40px;
+        border-top: 2px solid transparent;
+        background: 
+                linear-gradient(#fff 0 0) padding-box, 
+                linear-gradient(90deg, rgba(244, 249, 255, 0) 0%, #E9F1FA 54.12%, rgba(244, 249, 255, 0) 100%) border-box;
+    }
+
+    &__list{
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+}
+

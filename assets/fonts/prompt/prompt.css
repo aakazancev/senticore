@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt Light'), local('Prompt-Light'), url('Promptlight.woff2') format('woff2'), url('Promptlight.woff') format('woff'), url('Promptlight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt'), local('Prompt-Regular'), url('Prompt.woff2') format('woff2'), url('Prompt.woff') format('woff'), url('Prompt.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt SemiBold'), local('Prompt-SemiBold'), url('Promptsemibold.woff2') format('woff2'), url('Promptsemibold.woff') format('woff'), url('Promptsemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt Thin'), local('Prompt-Thin'), url('Promptthin.woff2') format('woff2'), url('Promptthin.woff') format('woff'), url('Promptthin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt Italic'), local('Prompt-Italic'), url('Promptitalic.woff2') format('woff2'), url('Promptitalic.woff') format('woff'), url('Promptitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt Medium Italic'), local('Prompt-MediumItalic'), url('Promptmediumitalic.woff2') format('woff2'), url('Promptmediumitalic.woff') format('woff'), url('Promptmediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt ExtraLight Italic'), local('Prompt-ExtraLightItalic'), url('Promptextralightitalic.woff2') format('woff2'), url('Promptextralightitalic.woff') format('woff'), url('Promptextralightitalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt ExtraBold Italic'), local('Prompt-ExtraBoldItalic'), url('Promptextrabolditalic.woff2') format('woff2'), url('Promptextrabolditalic.woff') format('woff'), url('Promptextrabolditalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt ExtraBold'), local('Prompt-ExtraBold'), url('Promptextrabold.woff2') format('woff2'), url('Promptextrabold.woff') format('woff'), url('Promptextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt Light Italic'), local('Prompt-LightItalic'), url('Promptlightitalic.woff2') format('woff2'), url('Promptlightitalic.woff') format('woff'), url('Promptlightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt Black'), local('Prompt-Black'), url('Promptblack.woff2') format('woff2'), url('Promptblack.woff') format('woff'), url('Promptblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt Thin Italic'), local('Prompt-ThinItalic'), url('Promptthinitalic.woff2') format('woff2'), url('Promptthinitalic.woff') format('woff'), url('Promptthinitalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt Medium'), local('Prompt-Medium'), url('Promptmedium.woff2') format('woff2'), url('Promptmedium.woff') format('woff'), url('Promptmedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt ExtraLight'), local('Prompt-ExtraLight'), url('Promptextralight.woff2') format('woff2'), url('Promptextralight.woff') format('woff'), url('Promptextralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt Bold Italic'), local('Prompt-BoldItalic'), url('Promptbolditalic.woff2') format('woff2'), url('Promptbolditalic.woff') format('woff'), url('Promptbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt SemiBold Italic'), local('Prompt-SemiBoldItalic'), url('Promptsemibolditalic.woff2') format('woff2'), url('Promptsemibolditalic.woff') format('woff'), url('Promptsemibolditalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt Bold'), local('Prompt-Bold'), url('Promptbold.woff2') format('woff2'), url('Promptbold.woff') format('woff'), url('Promptbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: local('Prompt Black Italic'), local('Prompt-BlackItalic'), url('Promptblackitalic.woff2') format('woff2'), url('Promptblackitalic.woff') format('woff'), url('Promptblackitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
