@@ -37,26 +37,6 @@
             @include gilroy-regular;
         }
     }
-    .ul-square{
-        li{
-            position: relative;
-            @include gilroy-regular;
-            display: grid;
-            grid-template-columns: 8px 1fr;
-            gap: 10px;
-            align-items: baseline;
-            &::before{
-                position: relative;
-                width: 8px;
-                height: 8px;
-                content: "";
-                background: #0C6DFA;
-                transform: rotate(45deg);
-                display: block;
-                border-radius: 1px;
-            }
-        }
-    }
 
     &__item{
         &_second{

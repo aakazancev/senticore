@@ -25,21 +25,22 @@ const body = document.body;
 --- Swiper Set --
 --------------- */
 
-const swiper = new Swiper('.popular__swiper', {
-  loop: false,
-  slidesPerView: 3,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: '.swiper__next',
-    prevEl: '.swiper__prev',
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
   },
-});
+  navigation: {
+    nextEl: '.case-study__next',
+    prevEl: '.case-study__prev',
+  },
+})
 
 /* ----––---------
 ----jquery tab---
 ---------------- */
 
-(function($) {
   $(function() {
     
     $('.bullets__tab').on('click', '.bullets__tab-item:not(.active)', function() {
@@ -49,4 +50,3 @@ const swiper = new Swiper('.popular__swiper', {
     });
     
   });
-})(jQuery);
