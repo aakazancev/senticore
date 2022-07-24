@@ -34,3 +34,19 @@ const swiper = new Swiper('.popular__swiper', {
     prevEl: '.swiper__prev',
   },
 });
+
+/* ----––---------
+----jquery tab---
+---------------- */
+
+(function($) {
+  $(function() {
+    
+    $('.bullets__tab').on('click', '.bullets__tab-item:not(.active)', function() {
+      $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('div.bullets__grid').find('div.bullets__content-item').removeClass('active').eq($(this).index()).addClass('active');
+    });
+    
+  });
+})(jQuery);
