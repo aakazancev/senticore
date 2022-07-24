@@ -83,6 +83,7 @@ body a {
   padding: 0 16px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 .container-fluid {
   max-width: 1440px;
@@ -614,6 +615,7 @@ body a {
 
 .reviews {
   padding: 60px 0;
+  position: relative;
 }
 .reviews__pagination {
   position: relative;
@@ -689,6 +691,26 @@ body a {
   font-size: 14px;
   line-height: 32px;
   color: #2B2934;
+}
+.reviews__navigation {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 32px;
+  max-width: 128px;
+  position: absolute;
+  top: 11px;
+  right: 0;
+}
+.reviews__prev, .reviews__next {
+  cursor: pointer;
+  transition: 0.2s;
+}
+.reviews__prev:hover, .reviews__next:hover {
+  opacity: 0.4;
+}
+.reviews__prev img, .reviews__next img {
+  pointer-events: none;
+  user-select: none;
 }
 
 .footer {

@@ -1,5 +1,6 @@
 .reviews{
     padding: 60px 0;
+    position: relative;
 
     &__pagination{
         position: relative;
@@ -75,6 +76,30 @@
                 @include gilroy-lines;
                 color: $main;
             }
+        }
+    }
+
+
+    &__navigation{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 32px;
+        max-width: 128px;
+        position: absolute;
+        top: 11px;
+        right: 0;
+    }
+
+    &__prev, &__next{
+        cursor: pointer;
+        transition: .2s;
+
+        &:hover{
+            opacity: .4;
+        }
+        img{
+            pointer-events: none;
+            user-select: none;
         }
     }
 

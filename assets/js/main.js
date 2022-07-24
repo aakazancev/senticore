@@ -45,8 +45,8 @@ const swiperRev = new Swiper('.reviews__swiper', {
     type: 'bullets',
   },
   navigation: {
-    nextEl: '.case-study__next',
-    prevEl: '.case-study__prev',
+    nextEl: '.reviews__next',
+    prevEl: '.reviews__prev',
   },
 })
 
