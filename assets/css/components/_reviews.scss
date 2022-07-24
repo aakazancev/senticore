@@ -1,0 +1,81 @@
+.reviews{
+    padding: 60px 0;
+
+    &__pagination{
+        position: relative;
+        bottom: 0 !important;
+        margin-top: 32px;
+
+        .swiper-pagination-bullet{
+            background: #0C6DFA;
+            width: 9px;
+            height: 9px;
+        }
+    }
+
+    &__item{
+        border: 2px solid #E9F1FA;
+        border-radius: 24px;
+        padding: 32px;
+        min-height: 294px;
+        &-top{
+            display: grid;
+            grid-template-columns: 45px 1fr;
+            gap: 24px;
+            align-items: center;
+            margin-bottom: 24px;
+
+        }
+        &-ava{
+            width: 46px;
+            height: 46px;
+            border-radius: 100px;
+            border: 1px solid #0C6DFA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Prompt';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 48px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            /* blue primary */
+
+            color: #0C6DFA;
+        }
+
+        &-info{
+            display: grid;
+            gap: 16px;
+
+            h5{
+                @include promt-semibold;
+                color: $main;
+            }
+            p{
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: $secondary;
+                opacity: 0.7;
+            }
+        }
+
+        &-content{
+            p{
+                @include gilroy-lines;
+                color: $main;
+            }
+        }
+    }
+
+}

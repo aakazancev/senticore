@@ -25,11 +25,24 @@ const body = document.body;
 --- Swiper Set --
 --------------- */
 
-const swiper = new Swiper('.swiper', {
+const swiperCase = new Swiper('.swiper_case', {
   slidesPerView: 1,
   effect: 'fade',
   fadeEffect: {
     crossFade: true
+  },
+  navigation: {
+    nextEl: '.case-study__next',
+    prevEl: '.case-study__prev',
+  },
+})
+
+const swiperRev = new Swiper('.reviews__swiper', {
+  slidesPerView: 2,
+  spaceBetween: 32,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
   },
   navigation: {
     nextEl: '.case-study__next',
