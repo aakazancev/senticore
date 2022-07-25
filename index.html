@@ -10,12 +10,37 @@
     <title>Senticore - Main Page</title>
 </head>
 <body>
+    <div class="nav__burger-menu">
+        <div class="nav__burger-close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.3031 12.0001L5.21197 17.0912L6.90902 18.7883L12.0002 13.6971L17.0913 18.7882L18.7884 17.0912L13.6972 12.0001L18.7884 6.9089L17.0914 5.21184L12.0002 10.303L6.90897 5.21179L5.21191 6.90885L10.3031 12.0001Z" fill="#172437"/>
+            </svg>
+        </div>
+        <ul>
+            <li><a href="#">Our services</a></li>
+            <li><a href="#">Cases</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </div> <!--nav__burger-menu-->
+
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <a href="/" class="logo">
-                    <img src="./assets/img/logo.svg" alt="logo Senticore">
-                </a>
+                <div class="nav__column-left">
+                    <div class="nav__burger">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21" stroke="#2B2934" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 6H21" stroke="#2B2934" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 18H21" stroke="#2B2934" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div> <!--nav__burger-->
+
+                    <a href="/" class="logo">
+                        <img src="./assets/img/logo.svg" alt="logo Senticore">
+                    </a> <!--logo-->
+                </div> <!--nav__column-left-->
+
 
                 <div class="nav__column">
                     <ul class="nav__menu">
@@ -92,14 +117,15 @@
     <section class="partners">
         <div class="container">
             <h4 class="center">Our partners:</h4>
-
-            <div class="partners__list">
-                <img src="./assets/img/partners/partners1.svg" alt="">
-                <img src="./assets/img/partners/partners2.png" alt="">
-                <img src="./assets/img/partners/partners3.svg" alt="">
-                <img src="./assets/img/partners/partners4.svg" alt="">
-                <img src="./assets/img/partners/partners5.svg" alt="">
-                <img src="./assets/img/partners/partners6.svg" alt="">
+            <div class="swiper partners__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/img/partners/partners1.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/img/partners/partners2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/img/partners/partners3.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/img/partners/partners4.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/img/partners/partners5.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/img/partners/partners6.svg" alt=""></div>
+                </div>
             </div>
         </div>
     </section>
@@ -369,6 +395,38 @@
                         </div> <!-- reviews__item-content -->
     
                     </div> <!-- reviews__item -->
+                    <div class="reviews__item swiper-slide">
+                        <div class="reviews__item-top">
+                            <div class="reviews__item-ava">3</div>
+                            <div class="reviews__item-info">
+                                <h5>Dr. Andreas Zekl</h5>
+                                <p>IBM Germany</p>
+                            </div> <!-- reviews__item-info -->
+                        </div> <!-- reviews__item-top -->
+    
+                        <div class="reviews__item-content">
+                            <p>Senticore understand databases very well in general, and has a wide network
+                                of connections to various technology experts, particularly in Israel. Senticore
+                                has a very good working relationship with IBM and would recommend them.</p>
+                        </div> <!-- reviews__item-content -->
+    
+                    </div> <!-- reviews__item -->
+                    <div class="reviews__item swiper-slide">
+                        <div class="reviews__item-top">
+                            <div class="reviews__item-ava">3</div>
+                            <div class="reviews__item-info">
+                                <h5>Dr. Andreas Zekl</h5>
+                                <p>IBM Germany</p>
+                            </div> <!-- reviews__item-info -->
+                        </div> <!-- reviews__item-top -->
+    
+                        <div class="reviews__item-content">
+                            <p>Senticore understand databases very well in general, and has a wide network
+                                of connections to various technology experts, particularly in Israel. Senticore
+                                has a very good working relationship with IBM and would recommend them.</p>
+                        </div> <!-- reviews__item-content -->
+    
+                    </div> <!-- reviews__item -->
                 </div> <!-- swiper-wrapper-->
                 
                 <div class="swiper-pagination reviews__pagination"></div>
@@ -410,9 +468,9 @@
                     <form action="/" class="form">
                         <div class="form__group">
                             <div class="form__col-2">
-                                <div class="form__item">
+                                <div class="form__item form__item_error">
                                     <label for="name">Name* </label>
-                                    <input type="text" class="main-input" placeholder="Your name">
+                                    <input type="text" class="main-input" value="Kasablanka" placeholder="Your name">
                                 </div>
                                 <div class="form__item">
                                     <label for="name">Country* </label>

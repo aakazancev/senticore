@@ -1,24 +1,19 @@
 /* --------------
 --- Mobile menu--
 --------------- */
-const burger = document.querySelector(".burger");
-const nav = document.querySelector(".mobile-nav");
-const overlayNav = document.querySelector(".overlay-nav");
-const closeNav = document.querySelector(".close-nav");
+const burger = document.querySelector(".nav__burger");
+const nav = document.querySelector(".nav__burger-menu");
+const closeNav = document.querySelector(".nav__burger-close");
 const body = document.body;
 
-// const toggleElements = function () {
-//   nav.classList.toggle("show");
-//   overlayNav.classList.toggle("show");
-//   closeNav.classList.toggle("show");
-//   body.classList.toggle("overflow");
-// };
+const toggleElements = function () {
+  nav.classList.toggle("show");
+  body.classList.toggle("overflow");
+};
 
-// burger.onclick = toggleElements;
-// closeNav.onclick = toggleElements;
-// overlayNav.onclick = toggleElements;
+burger.onclick = toggleElements;
+closeNav.onclick = toggleElements;
 
-// Модуальные окна
 
 
 /* --------------
@@ -43,11 +38,66 @@ const swiperRev = new Swiper('.reviews__swiper', {
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
+    clickable: true
   },
   navigation: {
     nextEl: '.reviews__next',
     prevEl: '.reviews__prev',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0
+    },
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      autoHeight: true
+    },
+    993: {
+      slidesPerView: 2,
+      spaceBetween: 32
+    }
+  }
+})
+
+const swiperPartner = new Swiper('.partners__swiper', {
+  slidesPerView: 5,
+  spaceBetween: 32,
+  loop: true,
+  speed: 5000,
+  autoplay: {
+    enabled: true,
+    delay: 1,
+  },
+  freeMode: {
+    enabled: true
+  },
+  on: {
+    init() {
+      this.el.addEventListener('mouseenter', () => {
+        this.autoplay.stop();
+      });
+
+      this.el.addEventListener('mouseleave', () => {
+        this.autoplay.start();
+      });
+    }
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    1300: {
+      slidesPerView: 5,
+      spaceBetween: 32
+    }
+  }
 })
 
 /* ----––---------

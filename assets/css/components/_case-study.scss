@@ -2,6 +2,10 @@
     padding: 60px 0;
     position: relative;
 
+    @media (max-width: 992px){
+        padding: 30px 0;
+    }
+
     &__counter{
         display: grid;
         max-width: 251px;
@@ -17,6 +21,11 @@
         letter-spacing: 0.04em;
         color: $main;
 
+        @media (max-width: 1110px){
+            font-size: 13px;
+            line-height: 58px;
+        }
+
     }
 
     &__header{
@@ -30,6 +39,13 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: 32px;
+
+        @media (max-width: 1110px){
+            position: absolute;
+            right: 0;
+            top: -54px;
+            gap: 24px;
+        }
     }
 
     &__prev, &__next{
@@ -41,24 +57,37 @@
         }
         img{
             pointer-events: none;
+            @media (max-width: 1110px){
+                width: 24px;
+            }
         }
     }
 
     .message{
         margin-bottom: 42px;
+
+        @media (max-width: 1110px){
+            margin-bottom: 29px;
+        }
     }
 
     &__block{
         background: #F4F9FF;
         border-radius: 32px;
         padding: 53px 0 31px;
-
+        @media (max-width: 1110px){
+            padding: 24px 16px;
+        }
         img{
             margin: 0 auto 34px;
             display: block;
             pointer-events: none;
             max-width: 100%;
             padding: 0 16px;
+
+            @media (max-width: 1110px){
+                display: none;
+            }
 
         }
     }
@@ -67,6 +96,10 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 38px;
+
+        @media (max-width: 1110px){
+            grid-template-columns: 1fr;
+        }
     }
 
     &__item{
@@ -75,10 +108,21 @@
             background: #E9F1FA;
             padding: 22px 32px;
 
+            @media (max-width: 1110px){
+                background: transparent;
+                padding: 0;
+                min-height: auto;
+            }
+
             h4{
                 @include promt-semibold;
                 color: $main;
                 margin-bottom: 16px;
+
+                @media (max-width: 1110px){
+                    font-size: 16px;
+                    line-height: 130%;
+                }
             }
 
             p{
@@ -90,6 +134,14 @@
                 letter-spacing: 0.015em;
                 color: $secondary;
             }
+
+        }
+        @media (max-width: 1110px){
+            display: none;
+
+            &:first-child{
+                display: block;
+            }
         }
 
         &-list{
@@ -97,9 +149,17 @@
             display: grid;
             gap: 16px;
             margin-top: 24px;
+            @media (max-width: 1110px){
+                padding: 0;
+            }
             li{
                 @include gilroy-regular;
                 color: $main;
+
+                @media (max-width: 1110px){
+                    font-size: 13px;
+                    line-height: 180.5%;
+                }
             }
         }
     }

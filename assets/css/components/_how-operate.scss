@@ -1,11 +1,19 @@
 .how-operate{
     padding: 40px 0 60px;
+    @media (max-width: 992px){
+        padding: 30px 0;
+    }
 
     &__columns{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 32px;
         margin: 32px 0 52px;
+
+        @media (max-width: 992px){
+            grid-template-columns: 1fr;
+            margin: 24px 0 32px;
+        }
     }
 
     &__quote{
@@ -19,11 +27,25 @@
         gap: 28px;
         margin-bottom: 32px;
 
+        @media (max-width: 992px){
+            padding: 33px 15px 15px 15px;
+            margin-bottom: 21px;
+            gap: 12px;
+        }
+
         h4{
             @include promt-semibold;
+            @media (max-width: 992px){
+                font-size: 16px;
+                line-height: 130%;
+            }
         }
         p{
             @include gilroy-medium;
+            @media (max-width: 992px){
+                font-size: 13px;
+                line-height: 180.5%;
+            }
         }
     }
 
@@ -32,9 +54,18 @@
         gap: 20px;
         padding-left: 32px;
 
+        @media (max-width: 992px){
+            padding-left: 0;
+        }
+
         li{
             position: relative;
             @include gilroy-regular;
+
+            @media (max-width: 992px){
+                font-size: 13px;
+                line-height: 180.5%;
+            }
         }
     }
 
@@ -43,9 +74,17 @@
             padding-top: 21px;
             padding-left: 68px;
 
+            @media (max-width: 992px){
+                padding-left: 0;
+                padding-top: 0;
+            }
+
             h4{
                 margin-bottom: 48px;
                 @include promt-semibold;
+                @media (max-width: 992px){
+                    margin-bottom: 21px;
+                }
             }
         }
     }
@@ -54,6 +93,9 @@
         display: grid;
         gap: 40px;
 
+        @media (max-width: 992px){
+            gap: 20px;
+        }
         li{
             display: flex;
             align-items: center;
@@ -62,6 +104,17 @@
             color: $secondary;
             position: relative;
 
+            @media (max-width: 992px){
+                font-size: 13px;
+                line-height: 150%;
+                gap: 21px;
+            }
+
+            img{
+                @media (max-width: 992px){
+                    width: 28px;
+                }
+            }
             &::after{
                 opacity: 0.2;
                 border: 1px dashed #0C6DFA;
@@ -70,6 +123,10 @@
                 position: absolute;
                 top: 96%;
                 left: 15px;
+
+                @media (max-width: 992px){
+                    display: none;
+                }
             }
             &:last-child::after{
                 display: none;

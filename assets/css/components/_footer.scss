@@ -2,14 +2,26 @@
     background: #F4F9FF;
     padding-top: 52px;
     margin-top: 60px;
+    overflow: hidden;
+
+    @media (max-width: 992px){
+        margin-top: 30px;
+        padding-top: 20px;
+    }
     &__columns{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 32px;
         padding-bottom: 82px;
+
+        @media (max-width: 992px){
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding-bottom: 32px;
+        }
     }
     &__contact{
-        margin-top: 34px;
+        margin-top: 31px;
         max-width: 551px;
         width: 100%;
     }
@@ -19,7 +31,10 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
-
+        @media (max-width: 992px){
+            padding-bottom: 0;
+            margin-bottom: 8px;
+        }
         p{
             display: flex;
             align-items: center;
@@ -38,6 +53,10 @@
 
     &__map{
         position: relative;
+
+        @media (max-width: 992px){
+            display: none;
+        }
         &-img{
             width: 100%;
             pointer-events: none;
@@ -54,6 +73,11 @@
         margin-top: 60px;
         display: grid;
         gap: 16px;
+
+        @media (max-width: 992px){
+            margin-top: 0;
+            padding-left: 36px;
+        }
     }
     &__mail{
         font-weight: 500;
@@ -70,14 +94,32 @@
     }
     &__right{
         padding-top: 75px;
+
+        @media (max-width: 992px){
+            padding-top: 0;
+        }
     }
     &__bottom{
         background: #E9F1FA;
         padding: 14px 0;
+
+        @media (max-width: 992px){
+            background: transparent;
+        }
         &-flex{
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            @media (max-width: 992px){
+                gap: 17px;
+                display: grid;
+                justify-content: center;
+                text-align: center;
+                a:first-child{
+                    display: none;
+                }
+            }
         }
         .policy{
             font-weight: 500;
@@ -86,8 +128,12 @@
             text-decoration-line: underline;
             font-family: 'Gilroy';
             /* blue primary */
-
+            
             color: $blue-primary;
+
+            @media (max-width: 992px){
+                grid-row-start: 2;
+            }
         }
         p{
             font-family: 'Gilroy';

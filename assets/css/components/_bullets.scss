@@ -1,22 +1,44 @@
 .bullets{
     padding: 60px 0;
+
+    @media (max-width: 992px){
+        padding: 30px 0;
+    }
     .btn-second{
         margin-left: 78px;
+
+        @media (max-width: 992px){
+            margin-left: 0;
+        }
     }
 
     &__grid{
         display: grid;
         grid-template-columns: 4fr 8fr;
         gap: 92px;
+
+        @media (max-width: 1130px){
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
     }
 
     &__tab{
+        @media (max-width: 992px){
+            padding-right: 16px;
+        }
         &-item{
             @include promt-medium;
             color: $secondary;
             cursor: pointer;
             padding: 32px 66px;
             border-top: 2px solid #E9F1FA;
+
+            @media (max-width: 992px){
+                padding: 20px 20px 20px 16px ;
+                font-size: 13px;
+                line-height: 150%;
+            }
             &:first-child{
                 border: none;
             }
@@ -39,6 +61,10 @@
     &__content{
         padding-top: 34px;
 
+        @media (max-width: 992px){
+            padding: 0 16px 0;
+        }
+
         &-item{
             margin-bottom: 65px;
             visibility: hidden;
@@ -46,6 +72,9 @@
             position: absolute;
             transition: opacity 1s, transform .5s;
             transform: translateY(15px);
+            @media (max-width: 992px){
+                margin-bottom: 24px;
+            }
             &.active{
                 position: relative;
                 visibility: visible;
@@ -57,6 +86,13 @@
                 gap: 24px;
                 padding-right: 100px;
 
+                @media (max-width: 1130px){
+                    padding-right: 16px;
+                }
+                @media (max-width: 992px){
+                    padding-right: 0px;
+                }
+
                 li{
                     @include gilroy-lines;
                     color: $main;
@@ -64,8 +100,17 @@
                     grid-template-columns: 54px 1fr;
                     gap: 24px;
 
+                    @media (max-width: 992px){
+                        grid-template-columns: 42px 1fr;
+                        font-size: 13px;
+                        line-height: 180.5%;
+                    }
                     img{
                         pointer-events: none;
+
+                        @media (max-width: 992px){
+                            width: 42px;
+                        }
                     }
                 }
             }
