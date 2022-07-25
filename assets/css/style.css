@@ -827,6 +827,7 @@ body a {
   opacity: 0;
   position: absolute;
   transition: opacity 1s, transform 0.5s;
+  will-change: transform;
   transform: translateY(15px);
 }
 @media (max-width: 992px) {
